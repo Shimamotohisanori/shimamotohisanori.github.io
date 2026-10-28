@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>パチ屋クリエイト｜パチンコ店のホールを設計するブラウザゲーム</title>
+<meta name="description" content="パチンコ店のホールの内装と島・台の配置を、1階・2階で自由にデザインできるブラウザゲーム。台の名前はフォントで書けて、台番号、通路チェック、PNG書き出しにも対応。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5345946125537288" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#eceef6;--fg:#1a1633;--muted:#5f5a7e;--accent:#d4206b;--onaccent:#fff;--panel:#fff;--line:#d2cfe5;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0b1d;--fg:#f1edff;--muted:#a39dc8;--accent:#ff4d94;--onaccent:#1a0b17;--panel:#181430;--line:#2f2950;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 "Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+main{max-width:720px;margin:0 auto}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.25;margin:8px 0 12px}
+h2{font-size:20px;margin:36px 0 8px}
+p,li{color:var(--fg)}
+.lead{color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--onaccent);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700;margin:12px 0}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+a{color:var(--accent)}
+ul,ol{padding-left:1.4em}
+dl{margin:0}dt{font-weight:700;margin-top:10px}dd{margin:0;color:var(--muted)}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>パチ屋クリエイト</h1>
+<p class="lead">自分だけのパチンコ屋さんの内装と設置台を考える、ブラウザで遊べるお絵かき型のゲームです。インストールや登録は要りません。</p>
+<a class="btn" href="/PachiyaCreate/">ゲームで遊ぶ</a>
+
+<h2>できること</h2>
+<ul>
+<li>1階と2階のホールを作れます。広さは3種類から選べます。</li>
+<li>島や設備（入口、景品カウンター、両替機、トイレ、休憩所、階段など）を置けます。</li>
+<li>台の名前を、12種類のフォントと8色から選んで書けます。</li>
+<li>台番号を自動でふれます。重複があると警告します。</li>
+<li>通路が狭くなっていないかを、色で確認できます。</li>
+<li>できあがったホールを、階ごとのPNG画像にできます。</li>
+</ul>
+
+<h2>遊び方</h2>
+<ol>
+<li>左のパレットから、置きたい島や設備を選びます。</li>
+<li>置きたい場所をクリックします。ドラッグで動かせて、Rキーで回転します。</li>
+<li>島を選ぶと、右側で台の名前、フォント、色、台番号を変えられます。</li>
+<li>「通路チェック」で、通れない場所がないか確かめます。</li>
+<li>「PNGにする」で画像にして、保存します。</li>
+</ol>
+
+<h2>島の種類</h2>
+<p>島の名前は、パチンコホールで使われる呼び方を参考にしています。</p>
+<dl>
+<dt>両島</dt><dd>両面に台を並べる基本の島です。</dd>
+<dt>壁島</dt><dd>壁ぎわに置く、片面だけの島です。</dd>
+<dt>柱島</dt><dd>建物の柱をはさむ幅広の島です。中は玉タンクなどの空間に使われます。</dd>
+<dt>単体島</dt><dd>1〜2台だけ置ける小さな島です。</dd>
+<dt>屈曲島</dt><dd>途中で折れ曲がった島です。このゲームでは、横と縦の間を1マス空けています。</dd>
+<dt>R島</dt><dd>弧を描くようにカーブした島です。</dd>
+<dt>雁行島</dt><dd>台を斜めにずらして並べる島です。</dd>
+<dt>P/S抱き合わせ島</dt><dd>片面がパチンコ、反対面がスロットの島です。</dd>
+<dt>円形島</dt><dd>目立つ場所に置く円形の島です。</dd>
+</dl>
+
+<h2>ご注意</h2>
+<p>このゲームでは、お金や景品を賭けることはありません。台の名前は自由に付けられるオリジナルの名称で、実在の機種や店舗とは関係ありません。</p>
+
+<footer>
+<a href="/privacy.html">プライバシーポリシー</a>
+</footer>
+</main>
+</body>
+</html>
